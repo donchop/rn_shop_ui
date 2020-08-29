@@ -29,7 +29,7 @@ export default (state = initialState, action) => {
         userProducts: state.userProducts.concat(newProdcut),
       };
     case UPDATE_PRODUCT:
-      const productIndex = state.userProducts.find(
+      const productIndex = state.userProducts.findIndex(
         (product) => product.id === action.id
       );
       const updatedProduct = new Product(

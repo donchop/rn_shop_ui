@@ -4,17 +4,17 @@ export const deleteProduct = (productId) => {
   return { type: DELETE_PRODUCT, productId };
 };
 
-export const createProduct = (title, description, image, price) => {
+export const createProduct = (title, description, imageUrl, price) => {
   return {
     type: CREATE_PRODUCT,
-    productData: { title, description, image, price },
+    productData: { title, description, imageUrl, price },
   };
 };
 
-export const updateProduct = (id, title, description, image) => {
+export const updateProduct = (id, title, description, imageUrl) => {
   return {
     type: UPDATE_PRODUCT,
     id,
-    productData: { title, description, image },
+    productData: { title, description, imageUrl },
   };
 };
